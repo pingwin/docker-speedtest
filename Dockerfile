@@ -1,5 +1,4 @@
-FROM ubuntu
-RUN apt-get update
+FROM python:2.7-slim
 ADD https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py /usr/local/bin/speedtest-cli
 RUN chmod +x /usr/local/bin/speedtest-cli
 ADD test.sh /usr/local/bin/test.sh
