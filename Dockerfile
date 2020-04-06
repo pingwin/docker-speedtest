@@ -1,4 +1,4 @@
-FROM python:2.7-slim
+FROM python:slim
 
 ADD test.sh /usr/local/bin/test.sh
 ADD https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py /usr/local/bin/speedtest-cli
